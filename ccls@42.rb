@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Ccls < Formula
+class CclsAT42< Formula
   desc "C/C++/ObjC language server"
   homepage "https://github.com/MaskRay/ccls"
   url "https://github.com/MaskRay/ccls.git"
