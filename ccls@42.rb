@@ -22,21 +22,11 @@ class CclsAT42< Formula
       -DCURSES_INCLUDE_PATH:PATH=/usr/include
       -DZLIB_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
       -DZLIB_INCLUDE_DIR:PATH=/usr/include
+      -DCMAKE_INSTALL_PREFIX=#{prefix}
     ]
 
-    system "cmake", "-H", ".", "-B", "release", *std_cmake_args
-    # system "cmake", "--build", "build"
-    # system "cmake", "--install", "build"
-    puts "ssss"
-  end
-
-  # This is specific to the way we install only the `vcpkg` tool.
-  def caveats
-    <<~EOS
-      This formula provides only the `vcpkg` executable. To use vcpkg:
-        git clone https://github.com/microsoft/vcpkg "$HOME/vcpkg"
-        export VCPKG_ROOT="$HOME/vcpkg"
-    EOS
+    system "cmake", "-H.", "-B", "release", *std_cmake_args
+    system "cmake", "--build", "release", "--target", "install"
   end
 
   test do
