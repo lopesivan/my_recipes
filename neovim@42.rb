@@ -11,7 +11,7 @@ class NeovimAT42< Formula
   head "https://github.com/lopesivan/build-neovim.git", branch: "master"
 
   def install
-      system "/usr/local/bin/bash", "build-neovim.sh"
+      system "/usr/local/bin/bash", "build-neovim.sh", #{prefix}
   end
 
   test do
