@@ -12,8 +12,8 @@ class StTerminal < Formula
   license "GPL-3.0-or-later"
 
   def install
-    system "make"
-    system "make", "PREFIX=#{prefix}", "install"
+    system "make", "CC=/usr/bin/c99"
+    system "make","PREFIX=#{prefix}", "install"
   end
 
   test do
