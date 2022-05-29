@@ -4,14 +4,30 @@
 class NgspiceAT42< Formula
   desc "Spice circuit simulator"
   homepage "https://ngspice.sourceforge.io/"
-  url "https://github.com/lopesivan/build-ngspice.git"
+  url "git://git.code.sf.net/p/ngspice/ngspice"
   version "37.0.0"
   license "Apache-2.0"
   revision 4
-  head "https://github.com/lopesivan/build-ngspice.git", branch: "master"
+  head "git://git.code.sf.net/p/ngspice/ngspice", branch: "master"
 
   def install
-      system "/usr/local/bin/bash", "build-ngspice.sh", "#{prefix}"
+    args = %W[
+      --prefix=#{prefix}
+      --with-x
+      --enable-xspice
+      --disable-debug
+      --enable-cider
+      --with-readline=yes
+      --enable-openmp
+    ]
+
+    system "sh", "autogen.sh"
+
+    mkdir "release" do
+      system "../configure", *args, ".."
+      system "make", "CC=/usr/bin/gcc", "CXX=/usr/bin/g++"
+      system "make", "install"
+    end
   end
 
   test do
