@@ -31,6 +31,18 @@ class NgspiceAT42< Formula
   end
 
   test do
-    system "false"
+    (testpath/"test.cir").write <<~EOS
+      RC test circuit
+      v1 1 0 1
+      r1 1 2 1
+      c1 2 0 1 ic=0
+      .tran 100u 100m uic
+      .control
+      run
+      quit
+      .endc
+      .end
+    EOS
+    system "#{bin}/ngspice", "test.cir"
   end
 end
