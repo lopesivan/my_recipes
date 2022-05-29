@@ -33,6 +33,7 @@ class NeovimAT42< Formula
     mkdir "build" do
       system "/usr/local/bin/cmake", *args, ".."
       system "make"
+      system "make", "install"
     end
 
   end
