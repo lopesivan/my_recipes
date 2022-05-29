@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class CclsAT42< Formula
+class NeovimATlatest< Formula
   desc "C/C++/ObjC language server"
   homepage "https://github.com/neovim/neovim"
   url "https://github.com/neovim/neovim.git"
