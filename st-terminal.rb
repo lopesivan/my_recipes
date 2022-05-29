@@ -7,7 +7,7 @@ class StTerminal < Formula
   url "https://github.com/lopesivan/st.git",
       branch: "develop",
       revision: "4d47d5c5f0a9b3e12715395c88b4dae1c059b771"
-  version "1.0"
+  version "0.8.4"
   head "https://github.com/lopesivan/st.git", branch: "master"
   license "GPL-3.0-or-later"
 
