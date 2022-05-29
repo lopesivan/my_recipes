@@ -24,7 +24,7 @@ class NgspiceAT42< Formula
     system "sh", "autogen.sh"
 
     mkdir "release" do
-      system "../configure", *args, ".."
+      system "../configure", *args
       system "make", "CC=/usr/bin/gcc", "CXX=/usr/bin/g++"
       system "make", "install"
     end
