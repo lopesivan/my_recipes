@@ -4,7 +4,7 @@
 class NgspiceAT42< Formula
   desc "Spice circuit simulator"
   homepage "https://ngspice.sourceforge.io/"
-  url "https://github.com/lopesivan/build-neovim.git"
+  url "https://github.com/lopesivan/build-ngspice.git.git"
   version "37.0"
   license "Apache-2.0"
   revision 4
