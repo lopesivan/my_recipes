@@ -18,10 +18,12 @@ class NeovimAT42< Formula
 
     mkdir ".deps" do
       system "cmake", "../third-party"
+      system "make"
     end
 
     mkdir "build" do
       system "cmake", *args, ".."
+      system "make"
     end
 
   end
