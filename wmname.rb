@@ -4,9 +4,9 @@
 class Wmname < Formula
   desc "wmname - prints/sets the WM name."
   homepage "https://git.suckless.org/wmname"
-  url "https://git.suckless.org/wmname"
+  url "https://git.suckless.org/wmname.git"
   version "0.2"
-  head "https://git.suckless.org/wmname", branch: "master"
+  head "https://git.suckless.org/wmname.git", branch: "master"
   license "GPL-3.0-or-later"
 
   def install
