@@ -11,7 +11,7 @@ class Xcwd < Formula
 
   def install
     system "make", "CC=/usr/bin/gcc"
-    system "make","PREFIX=#{prefix}", "install"
+    system "make","prefix=#{prefix}", "install"
   end
 
   test do
