@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Xdo < Formula
+class Keynav < Formula
   desc "Control the mouse with the keyboard."
   homepage "http://www.semicomplete.com/projects/keynav"
   url "https://github.com/jordansissel/keynav", using: :git
