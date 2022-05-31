@@ -21,8 +21,7 @@ class PyenvAT42 < Formula
     end
 
     share.install prefix/"man"
-    system "pyenv", "install", "3.10.4"
-
+    system "env", "PYTHON_CONFIGURE_OPTS=--enable-shared", "pyenv", "install", "3.10.4"
   end
 
   test do
