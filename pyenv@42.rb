@@ -2,7 +2,7 @@ class PyenvAT42 < Formula
   desc "Python version management"
   homepage "https://github.com/pyenv/pyenv"
   url "https://github.com/pyenv/pyenv.git"
-  version "42"
+  version "0.0.1"
   license "MIT"
   head "https://github.com/pyenv/pyenv.git", branch: "master"
 
