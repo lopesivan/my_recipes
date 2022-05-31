@@ -1,4 +1,4 @@
-class PlenvAt42 < Formula
+class PlenvAT42 < Formula
   desc "Perl binary manager"
   homepage "https://github.com/tokuhirom/plenv"
   url "https://github.com/tokuhirom/plenv.git"
