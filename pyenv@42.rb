@@ -1,4 +1,4 @@
-class PyenvAt42 < Formula
+class PyenvAT42 < Formula
   desc "Python version management"
   homepage "https://github.com/pyenv/pyenv"
   url "https://github.com/pyenv/pyenv.git"
@@ -7,10 +7,10 @@ class PyenvAt42 < Formula
   version_scheme 1
   head "https://github.com/pyenv/pyenv.git", branch: "master"
 
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+(-\d+)?)$/i)
-  end
+  # livecheck do
+  #   url :stable
+  #   regex(/^v?(\d+(?:\.\d+)+(-\d+)?)$/i)
+  # end
 
   def install
     inreplace "libexec/pyenv", "/usr/local", HOMEBREW_PREFIX
