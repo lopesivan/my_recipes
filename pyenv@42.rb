@@ -14,6 +14,7 @@ class PyenvAT42 < Formula
 
     system "src/configure"
     system "make", "-C", "src"
+    system "env", "PYTHON_CONFIGURE_OPTS=--enable-shared", "bin/pyenv", "install", "3.10.4"
 
     prefix.install Dir["*"]
     %w[pyenv-install pyenv-uninstall python-build].each do |cmd|
@@ -21,7 +22,6 @@ class PyenvAT42 < Formula
     end
 
     share.install prefix/"man"
-    system "env", "PYTHON_CONFIGURE_OPTS=--enable-shared", "bin/pyenv", "install", "3.10.4"
   end
 
   test do
