@@ -7,11 +7,6 @@ class PyenvAT42 < Formula
   version_scheme 1
   head "https://github.com/pyenv/pyenv.git", branch: "master"
 
-  # livecheck do
-  #   url :stable
-  #   regex(/^v?(\d+(?:\.\d+)+(-\d+)?)$/i)
-  # end
-
   def install
     inreplace "libexec/pyenv", "/usr/local", HOMEBREW_PREFIX
     inreplace "libexec/pyenv-rehash", "$(command -v pyenv)", opt_bin/"pyenv"
