@@ -11,10 +11,11 @@ class PyenvAT42 < Formula
     inreplace "libexec/pyenv", "/usr/local", HOMEBREW_PREFIX
     inreplace "libexec/pyenv-rehash", "$(command -v pyenv)", opt_bin/"pyenv"
     inreplace "pyenv.d/rehash/source.bash", "$(command -v pyenv)", opt_bin/"pyenv"
-
     system "src/configure"
     system "make", "-C", "src"
-    system "env", "PYTHON_CONFIGURE_OPTS=--enable-shared", "bin/pyenv", "install", "3.10.4"
+    system "git", "clone", "https://github.com/yyuu/pyenv-virtualenv.git", "plugins/pyenv-virtualenv"
+
+    # system "env", "PYTHON_CONFIGURE_OPTS=--enable-shared", "bin/pyenv", "install", "3.10.4"
 
     prefix.install Dir["*"]
     %w[pyenv-install pyenv-uninstall python-build].each do |cmd|
