@@ -21,6 +21,7 @@ class PyenvAT42 < Formula
     end
 
     share.install prefix/"man"
+    system "pyenv", "install", "3.10.4"
 
   end
 
