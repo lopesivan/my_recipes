@@ -2,6 +2,7 @@ class PlenvAT42 < Formula
   desc "Perl binary manager"
   homepage "https://github.com/tokuhirom/plenv"
   url "https://github.com/tokuhirom/plenv.git"
+  version "1.2.3"
   license any_of: ["Artistic-1.0-Perl", "GPL-1.0-or-later"]
   head "https://github.com/tokuhirom/plenv.git", branch: "master"
 
