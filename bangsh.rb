@@ -35,7 +35,8 @@ class Bangsh < Formula
     ].each do |file|
 	  system "cp", "-r", file, "#{prefix}"
     end
-    system "make","prefix=#{prefix}", "install"
+    bin.install_symlink "bang" => "bang"
+    # system "make","prefix=#{prefix}", "install"
   end
 
   test do
