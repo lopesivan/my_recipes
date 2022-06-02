@@ -16,6 +16,7 @@ class Xp < Formula
   depends_on "bangsh" => :build
 
   def install
+	#system "cp", "-r", "etc", "exec", "modules", "tasks", "tests", "xp", #{prefix}
     system "make","prefix=#{prefix}", "install"
   end
 
