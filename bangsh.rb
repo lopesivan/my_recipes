@@ -18,12 +18,6 @@ class Bangsh < Formula
   end
 
   def install
-
-    patch = %W[
-      bangsh--patch--1ae3f11e90ada2638d3ab61605a004354c14167a86917d515f1961246b1ebba0.diff
-    ]
-
-    system "patch", "-Np1", "-i", *patch
     system "make","prefix=#{prefix}", "install"
   end
 
