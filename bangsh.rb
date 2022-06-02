@@ -13,11 +13,14 @@ class Bangsh < Formula
   head "https://github.com/bangsh/bangsh.git", branch: "master"
 
   patch do
-    url "https://raw.githubusercontent.com/lopesivan/bangsh/patches/bangsh-makefile-20220602-86e51ea.diff"
+    url
     sha256 "1ae3f11e90ada2638d3ab61605a004354c14167a86917d515f1961246b1ebba0"
   end
 
   def install
+    system "wget", "-O", "bangsh-makefile-20220602-86e51ea.diff",
+      "https://raw.githubusercontent.com/lopesivan/bangsh/patches/bangsh-makefile-20220602-86e51ea.diff"
+    system "patch", "-Np1", "-i", "bangsh-makefile-20220602-86e51ea.diff"
     system "make","prefix=#{prefix}", "install"
   end
 
