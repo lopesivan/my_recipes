@@ -19,8 +19,19 @@ class Bangsh < Formula
 
   def install
     %W[
-      bang CHANGELOG.md dist fixtures Makefile README.md tasks
-      boot.sh CONTRIBUTING.md docs LICENSE  modules  samples tests
+      bang
+      boot.sh
+      CHANGELOG.md
+      CONTRIBUTING.md
+      docs
+      fixtures
+      LICENSE
+      Makefile
+      modules
+      README.md
+      samples
+      tasks
+      tests
     ].each do |file|
 	  system "cp", "-r", file, "#{prefix}"
     end
