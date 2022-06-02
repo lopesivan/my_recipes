@@ -19,6 +19,7 @@ class Bangsh < Formula
 
   def install
     system "make","prefix=#{prefix}", "install"
+    prefix.install "boot.sh", "modules", "tasks", "fixtures", "tests"
   end
 
   test do
