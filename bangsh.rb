@@ -41,7 +41,8 @@ class Bangsh < Formula
 	  system "cp", "-r", file, "#{prefix}"
     end
 
-    inreplace "bang", "__BANG_PATH__", HOMEBREW_PREFIX
+    # inreplace "bang", "__BANG_PATH__", HOMEBREW_PREFIX
+    inreplace "bang", "__BANG_PATH__", "#{prefix}"
     bin.install "bang" => "bang"
     # system "make","prefix=#{prefix}", "install"
   end
