@@ -5,12 +5,12 @@ class Bangsh < Formula
   desc "Bang.sh - for easy Shell Scripting"
   homepage "https://github.com/bangsh/bangsh"
   version "0.1.1"
-  url "https://github.com/bangsh/bangsh.git",
+  url "https://github.com/lopesivan/bangsh.git",
     branch: "main",
     revision: "2c9c70d73fd161c57ffd3595d95e6285698a9c59"
   license "MIT"
   revision 1
-  head "https://github.com/bangsh/bangsh.git", branch: "master"
+  head "https://github.com/lopesivan/bangsh.git", branch: "master"
 
   patch do
     url "https://raw.githubusercontent.com/lopesivan/bangsh/patches/bangsh-makefile-20220602-86e51ea.diff"
