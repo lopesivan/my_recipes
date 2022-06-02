@@ -12,9 +12,14 @@ class Bangsh < Formula
   revision 1
   head "https://github.com/lopesivan/bangsh.git", branch: "master"
 
+  # patch do
+  #   url "https://raw.githubusercontent.com/lopesivan/bangsh/patches/bangsh-makefile-20220602-86e51ea.diff"
+  #   sha256 "1ae3f11e90ada2638d3ab61605a004354c14167a86917d515f1961246b1ebba0"
+  # end
+
   patch do
-    url "https://raw.githubusercontent.com/lopesivan/bangsh/patches/bangsh-makefile-20220602-86e51ea.diff"
-    sha256 "1ae3f11e90ada2638d3ab61605a004354c14167a86917d515f1961246b1ebba0"
+    url "https://raw.githubusercontent.com/lopesivan/bangsh/patches/bangsh-set-variable-20220602-49f417b.diff"
+    sha256 "62ad3a3871e3edc2b06dda5f1e7aaa3d4744ed3c64a3b7bd0c9497c25b0d6102"
   end
 
   def install
@@ -35,6 +40,8 @@ class Bangsh < Formula
     ].each do |file|
 	  system "cp", "-r", file, "#{prefix}"
     end
+
+    inreplace "bang", "__BANG_PATH__", HOMEBREW_PREFIX
     bin.install "bang" => "bang"
     # system "make","prefix=#{prefix}", "install"
   end
