@@ -18,8 +18,13 @@ class Bangsh < Formula
   end
 
   def install
+    %W[
+      bang CHANGELOG.md dist fixtures Makefile README.md tasks
+      boot.sh CONTRIBUTING.md docs LICENSE  modules  samples tests
+    ].each do |file|
+	  system "cp", "-r", file, "#{prefix}"
+    end
     system "make","prefix=#{prefix}", "install"
-    # prefix.install "boot.sh", "modules", "tasks", "fixtures", "tests"
   end
 
   test do
