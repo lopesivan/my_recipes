@@ -14,7 +14,7 @@ class Xp < Formula
   license "GPL-3.0-or-later"
 
   depends_on "bangsh" => :build
-  depends_on "bash-redis" => :build
+  depends_on "redis-bash" => :build
 
   def install
     inreplace "tasks/add.sh", "__REDIS_BASH_LIB__", "${HOME}/.linuxbrew/Cellar/redis-bash/1.0.0/redis-bash-lib"
