@@ -5,7 +5,7 @@ class Flutter < Formula
   desc "Flutter is Google's SDK for crafting beautiful."
   homepage "https://flutter.dev"
   url "https://github.com/flutter/flutter",
-    branch: "main",
+    branch: "master",
     using: :git
   version "3.1.0"
   head "https://github.com/flutter/flutter.git",
