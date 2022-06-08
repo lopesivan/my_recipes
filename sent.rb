@@ -12,6 +12,12 @@ class Sent < Formula
   license "GPL-3.0-or-later"
 
   def install
+    %W[
+      example
+      nyan.png
+    ].each do |file|
+	  system "cp", "-r", file, "#{prefix}"
+    end
     system "make", "CC=/usr/bin/gcc"
     system "make","PREFIX=#{prefix}", "install"
   end
