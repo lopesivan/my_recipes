@@ -1,7 +1,9 @@
 class JsonTui < Formula
   desc "A prototype of a JSON file explorer using a terminal text interface."
   homepage "https://github.com/ArthurSonzogni/json-tui"
-  url "https://github.com/ArthurSonzogni/json-tui.git"
+  url "https://github.com/ArthurSonzogni/json-tui.git",
+    branch: "main",
+    using: :git
   version "1.3.0"
   head "https://github.com/ArthurSonzogni/json-tui.git",
     branch: "master"
