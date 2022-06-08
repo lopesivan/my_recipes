@@ -34,6 +34,13 @@ class Flutter < Formula
 	  system "cp", "-r", file, "#{prefix}"
     end
 
+    %W[
+      #{prefix}/bin/dart.bat
+      #{prefix}/bin/flutter.bat
+    ].each do |file|
+	  system "rm", "-rf", file
+    end
+
     bin.install "bin/dart" => "dart"
     bin.install "bin/flutter" => "flutter"
   end
