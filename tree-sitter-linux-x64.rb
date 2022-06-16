@@ -10,7 +10,7 @@ class TreeSitterLinuxX64 < Formula
   revision 4
 
   def install
-    bin.install "tree-sitter-linux-x64" => "tree-sitter"
-	system "chmod", "+x", "#{prefix}/tree-sitter-linux-x64"
+	# system "chmod", "+x", "#{prefix}/tree-sitter-linux-x64"
+    bin.install "tree-sitter" => "tree-sitter"
   end
 end
