@@ -4,8 +4,8 @@
 class ProtobufAT42 < Formula
   desc "Protocol buffers (Google's data interchange format)"
   homepage "https://github.com/protocolbuffers/protobuf/"
-  url "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.21.1.tar.gz"
-  sha256 "a295dd3b9551d3e2749a9969583dea110c6cdcc39d02088f7c7bb1100077e081"
+  url "https://github.com/protocolbuffers/protobuf/releases/download/v3.15.8/protoc-3.15.8-linux-x86_64.zip"
+  sha256 "b9ff821d2a4f9e9943dc2a13e6a76d99c7472dac46ddd3718a3a4c3b877c044a"
   license "BSD-3-Clause"
   revision 4
 
