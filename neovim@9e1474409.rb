@@ -26,7 +26,8 @@ class NeovimAT9e1474409< Formula
     ]
 
     system "git", "switch", "9e1474409"
-
+    system "git", "branch", "-b", "home"
+    
     mkdir ".deps" do
       system "/usr/local/bin/cmake", *args_third_party, "../third-party"
       system "make"
