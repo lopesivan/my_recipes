@@ -25,6 +25,8 @@ class NeovimAT42< Formula
       -DCMAKE_INSTALL_PREFIX=#{prefix}
     ]
 
+    system "git", "switch", "9e1474409"
+
     mkdir ".deps" do
       system "/usr/local/bin/cmake", *args_third_party, "../third-party"
       system "make"
