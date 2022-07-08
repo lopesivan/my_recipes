@@ -6,8 +6,8 @@ class StTerminal < Formula
   homepage "https://github.com/lopesivan/st"
   url "https://github.com/lopesivan/st.git",
       branch: "develop",
-      revision: "4d47d5c5f0a9b3e12715395c88b4dae1c059b771"
-  version "0.8.4"
+      revision: "fab23947e33497eddf82e397c18b22f4d98647a2"
+  version "0.8.5"
   head "https://github.com/lopesivan/st.git", branch: "master"
   license "GPL-3.0-or-later"
 
