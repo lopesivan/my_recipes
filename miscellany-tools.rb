@@ -22,7 +22,7 @@ class MiscellanyTools < Formula
     bin.install "bin/lsp.sh" => "lsp"
     bin.install "bin/lsperm.sh" => "lsperm"
     bin.install "bin/fennel-1.1.0" => "fennel"
-    bin.install "bin/tree-sitter-0.20.2" => "tree-sitter"
+    # bin.install "bin/tree-sitter-0.20.2" => "tree-sitter"
     bin.install "bin/java-lsp.sh" => "java-lsp.sh"
     bin.install "bin/winetricks" => "winetricks"
     bin.install "bin/cpp-ctags.sh" => "cpp-ctags"
