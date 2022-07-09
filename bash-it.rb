@@ -10,7 +10,7 @@ class BashIt < Formula
   license "GPL-3.0-or-later"
 
   def install
-    system "bash", "install.sh"
+    prefix.install Dir["*"]
   end
 
   test do
