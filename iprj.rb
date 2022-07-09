@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Iprj < Formula
   desc "Commnad line using framework bangsh."
-  homepage "https://github.com/lopesivan/xp"
+  homepage "https://github.com/lopesivan/iprj"
   url "https://github.com/lopesivan/iprj.git",
     branch: "main",
     using: :git
