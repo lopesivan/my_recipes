@@ -15,7 +15,8 @@ class MiscellanyTools < Formula
 
   def install
     #NVIM_BIN = bakefile.sh cheat-server.sh cht.sh exa fennel lsperm glow harpoon java-lsp.sh snip tmux2 winetricks zeta-note
-
+    #prefix.install "bakefile.sh", "cheat-server.sh", "cht.sh", "exa", "fennel", "lsperm", "glow", "harpoon", "java-lsp.sh", "snip", "tmux2", "winetricks", "zeta-note"
+    prefix.install "bakefile.sh"
   end
 
   test do
