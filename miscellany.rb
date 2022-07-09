@@ -7,7 +7,7 @@ class MiscellanyTools < Formula
   url "https://github.com/lopesivan/miscellany.git",
     branch: "main",
     using: :git
-  version "2.1"
+  version "1.2"
   head "https://github.com/lopesivan/miscellany.git",
     branch: "master",
     using: :git
