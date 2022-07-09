@@ -27,7 +27,7 @@ class MiscellanyTools < Formula
     bin.install "bin/winetricks" => "winetricks"
     bin.install "bin/cpp-ctags.sh" => "cpp-ctags"
     bin.install "bin/cheat-client.sh" => "cht.sh"
-    bin.install "snip.neovim.complete.sh" => "snip"
+    bin.install "bin/snip.neovim.complete.sh" => "snip"
   end
 
   test do
