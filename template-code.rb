@@ -15,7 +15,7 @@ class TemplateCode < Formula
 
   def install
     prefix.install "w-new-cpp"
-    system "/usr/bin/make",make "-C","#{prefix}/w-new-cpp/w/c"
+    system "/usr/bin/make", "-C", "#{prefix}/w-new-cpp/w/c"
 
   end
 
