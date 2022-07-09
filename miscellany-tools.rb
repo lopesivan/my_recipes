@@ -18,7 +18,7 @@ class MiscellanyTools < Formula
     #prefix.install "bakefile.sh", "cheat-server.sh", "cht.sh", "exa", "fennel", "lsperm", "glow", "harpoon", "java-lsp.sh", "snip", "tmux2", "winetricks", "zeta-note"
     prefix.install "bakefile.sh"
     prefix.install "lsperm"
-    bin.install "exa" => "kiko"
+    bin.install "bin/exa" => "kiko"
   end
 
   test do
