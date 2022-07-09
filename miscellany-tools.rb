@@ -16,9 +16,15 @@ class MiscellanyTools < Formula
   def install
     prefix.install "zeta-note", "tmux2"
 
+    # bin.mkdir
+
+    %w[glow exa].each do |cmd|
+      bin.install_symlink "#{prefix}/binary/#{cmd}"
+    end
+
     bin.install "bin/bakefile-0.2.12.sh" => "bakefile.sh"
-    bin.install "bin/glow" => "glow"
-    bin.install "bin/exa" => "exa"
+    # bin.install "bin/glow" => "glow"
+    # bin.install "bin/exa" => "exa"
     bin.install "bin/lsp.sh" => "lsp"
     bin.install "bin/lsperm.sh" => "lsperm"
     bin.install "bin/fennel-1.1.0" => "fennel"
