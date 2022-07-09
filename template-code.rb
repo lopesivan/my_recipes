@@ -14,8 +14,9 @@ class TemplateCode < Formula
   license "GPL-3.0-or-later"
 
   def install
-    prefix.install "w-new-cpp"
-    system "/usr/bin/make", "-C", "#{prefix}/w-new-cpp/w/c"
+    prefix.install Dir["*"]
+    # prefix.install "w-new-cpp"
+    # system "/usr/bin/make", "-C", "#{prefix}/w-new-cpp/w/c"
 
   end
 
