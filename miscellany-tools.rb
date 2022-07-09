@@ -18,13 +18,13 @@ class MiscellanyTools < Formula
 
     # bin.mkdir
 
-    %w[glow exa].each do |cmd|
-      bin.install_symlink "#{prefix}/binary/#{cmd}"
-    end
+    # %w[glow exa].each do |cmd|
+    #   bin.install_symlink "#{prefix}/binary/#{cmd}"
+    # end
 
     bin.install "bin/bakefile-0.2.12.sh" => "bakefile.sh"
-    # bin.install "bin/glow" => "glow"
-    # bin.install "bin/exa" => "exa"
+    bin.install "binary/glow" => "glow"
+    bin.install "binary/exa" => "exa"
     bin.install "bin/lsp.sh" => "lsp"
     bin.install "bin/lsperm.sh" => "lsperm"
     bin.install "bin/fennel-1.1.0" => "fennel"
