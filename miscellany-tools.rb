@@ -14,11 +14,20 @@ class MiscellanyTools < Formula
   license "GPL-3.0-or-later"
 
   def install
-    #NVIM_BIN = bakefile.sh cheat-server.sh cht.sh exa fennel lsperm glow harpoon java-lsp.sh snip tmux2 winetricks zeta-note
-    #prefix.install "bakefile.sh", "cheat-server.sh", "cht.sh", "exa", "fennel", "lsperm", "glow", "harpoon", "java-lsp.sh", "snip", "tmux2", "winetricks", "zeta-note"
-    prefix.install "bakefile.sh"
-    prefix.install "lsperm"
-    bin.install "bin/exa" => "kiko"
+    prefix.install "zeta-note", "tmux2"
+
+    bin.install "bin/bakefile-0.2.12.sh" => "bakefile.sh"
+    bin.install "bin/glow" => "glow"
+    bin.install "bin/exa" => "exa"
+    bin.install "bin/lsp.sh" => "lsp"
+    bin.install "bin/lsperm.sh" => "lsperm"
+    bin.install "bin/fennel-1.1.0" => "fennel"
+    bin.install "bin/tree-sitter-0.20.2" => "tree-sitter"
+    bin.install "bin/java-lsp.sh" => "java-lsp.sh"
+    bin.install "bin/winetricks" => "winetricks"
+    bin.install "bin/cpp-ctags.sh" => "cpp-ctags"
+    bin.install "bin/cheat-client.sh" => "cht.sh"
+    bin.install "snip.neovim.complete.sh" => "snip"
   end
 
   test do
