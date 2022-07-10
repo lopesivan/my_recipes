@@ -18,56 +18,9 @@ class BashIt < Formula
   def install
     prefix.install Dir["*"]
 
-    # bash-it enable alias developer general mutt redis tmux vim wine xclip
-    # bash-it enable completion bash-it brew cargo cht docker-compose docker-machine git_flow github-cli iprj tldr tmuxinator ttjava wd xp
-    # bash-it enable plugin android arduino brew dart ghcup goenv gradle groovy jbang jenv luaenv ndenv pandoc perl5 pyenv rakudobrew rbenv roo rustup
-
-# bash-it enable alias
-# developer
-# general
-# mutt
-# redis
-# tmux
-# vim
-# wine
-# xclip
-
-# bash-it enable completion
-# bash-it
-# brew
-# cargo
-# cht
-# docker-compose
-# docker-machine
-# git_flow
-# github-cli
-# iprj
-# tldr
-# tmuxinator
-# ttjava
-# wd
-# xp
-
-# bash-it enable plugin
-# android
-# arduino
-# brew
-# dart
-# ghcup
-# goenv
-# gradle
-# groovy
-# jbang
-# jenv
-# luaenv
-# ndenv
-# pandoc
-# perl5
-# pyenv
-# rakudobrew
-# rbenv
-# roo
-# rustup
+    # customize-bash-it.sh
+    # https://gist.githubusercontent.com/lopesivan/94d5667ab301571f120e1893ad14c0e4/raw/6b2aebdc71c18e865f6c8d088293ed169d9c388e/customize-bash-it.sh
+    #
   end
 
   test do
