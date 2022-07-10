@@ -14,7 +14,7 @@ class BashConfig < Formula
   license "GPL-3.0-or-later"
 
   def install
-    inreplace "bashrc", "${HOME}/developer/", "#{prefix}/"
+    inreplace "bashrc", "${HOME}/developer/bash-config", "#{prefix}"
     # inreplace "bbc", "${HOME}/developer/", "#{prefix}/"
     # inreplace "configure.sh", "${HOME}/developer/", "#{prefix}/"
     # inreplace "it.sh", "${HOME}/developer/", "#{prefix}/"
