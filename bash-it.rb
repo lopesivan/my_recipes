@@ -21,7 +21,7 @@ class BashIt < Formula
     # customize-bash-it.sh
     # https://gist.githubusercontent.com/lopesivan/94d5667ab301571f120e1893ad14c0e4/raw/6b2aebdc71c18e865f6c8d088293ed169d9c388e/customize-bash-it.sh
     #
-    # curl https://gist.githubusercontent.com/lopesivan/94d5667ab301571f120e1893ad14c0e4/raw/6b2aebdc71c18e865f6c8d088293ed169d9c388e/customize-bash-it.sh| bash
+    #/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/lopesivan/94d5667ab301571f120e1893ad14c0e4/raw/6b2aebdc71c18e865f6c8d088293ed169d9c388e/customize-bash-it.sh)"
   end
 
   test do
