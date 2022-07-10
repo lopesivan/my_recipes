@@ -15,11 +15,11 @@ class BashConfig < Formula
 
   def install
     inreplace "bashrc", "${HOME}/developer/", "#{prefix}/"
-    inreplace "bbc", "${HOME}/developer/", "#{prefix}/"
-    inreplace "configure.sh", "${HOME}/developer/", "#{prefix}/"
-    inreplace "it.sh", "${HOME}/developer/", "#{prefix}/"
-    inreplace "Makefile", "${HOME}/developer/", "#{prefix}/"
-    inreplace "profile", "${HOME}/developer/", "#{prefix}/"
+    # inreplace "bbc", "${HOME}/developer/", "#{prefix}/"
+    # inreplace "configure.sh", "${HOME}/developer/", "#{prefix}/"
+    # inreplace "it.sh", "${HOME}/developer/", "#{prefix}/"
+    # inreplace "Makefile", "${HOME}/developer/", "#{prefix}/"
+    # inreplace "profile", "${HOME}/developer/", "#{prefix}/"
 
     prefix.install Dir["*"]
   end
