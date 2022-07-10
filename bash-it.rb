@@ -17,6 +17,52 @@ class BashIt < Formula
 
   def install
     prefix.install Dir["*"]
+# bash-it enable alias
+# developer
+# general
+# mutt
+# redis
+# tmux
+# vim
+# wine
+# xclip
+
+# bash-it enable completion
+# bash-it
+# brew
+# cargo
+# cht
+# docker-compose
+# docker-machine
+# git_flow
+# github-cli
+# iprj
+# tldr
+# tmuxinator
+# ttjava
+# wd
+# xp
+
+# bash-it enable plugin
+# android
+# arduino
+# brew
+# dart
+# ghcup
+# goenv
+# gradle
+# groovy
+# jbang
+# jenv
+# luaenv
+# ndenv
+# pandoc
+# perl5
+# pyenv
+# rakudobrew
+# rbenv
+# roo
+# rustup
   end
 
   test do
