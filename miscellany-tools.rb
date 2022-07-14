@@ -23,7 +23,7 @@ class MiscellanyTools < Formula
     # end
 
     bin.install 'bin/bakefile-0.2.12.sh' => 'bakefile.sh'
-    # bin.install "binary/glow" => "glow"
+    bin.install "binary/glow" => "glow"
     bin.install 'binary/exa' => 'exa'
     bin.install 'bin/lsp.sh' => 'lsp'
     bin.install 'bin/lsperm.sh' => 'lsperm'
