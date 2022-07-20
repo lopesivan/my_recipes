@@ -19,8 +19,8 @@ class Ezored < Formula
   end
 
   def install
-    prefix.install Dir["*"]
     bin.install "ezored.sh" => "ezored"
+    prefix.install Dir["*"]
   end
 
   test do
