@@ -13,8 +13,14 @@ class Ezored < Formula
     using: :git
   license "GPL-3.0-or-later"
 
+  patch do
+    url "https://raw.githubusercontent.com/lopesivan/my_patches/main/ezored/ezored-adicionando_wrapper_en_shell_script-20220720-82153c0.diff"
+    sha256 "7d1c4cf41aa434fc8369eef42a1a58c3a77bcbff918ce8221d1b69531a86fed4"
+  end
+
   def install
     prefix.install Dir["*"]
+    bin.install "ezored.sh" => "ezored"
   end
 
   test do
