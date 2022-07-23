@@ -26,7 +26,7 @@ class MiscellanyTools < Formula
     bin.install "binary/glow" => "glow"
     bin.install 'binary/exa' => 'exa'
     bin.install 'bin/lsp.sh' => 'lsp'
-    bin.install 'bin/trsns' => 'trsns'
+    bin.install 'bin/trans' => 'trans'
     bin.install 'bin/lsperm.sh' => 'lsperm'
     bin.install 'bin/fennel-1.1.0' => 'fennel'
     # bin.install "bin/tree-sitter-0.20.2" => "tree-sitter"
