@@ -12,6 +12,7 @@ class NeovimAT9e1474409< Formula
 
   def install
     system "make", "CMAKE_BUILD_TYPE=RelWithDebInfo", "CMAKE_INSTALL_PREFIX=#{prefix}"
+    system "make", "install"
   end
 
   test do
