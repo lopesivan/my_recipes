@@ -4,8 +4,7 @@
 class NeovimAT9e1474409< Formula
   desc "Ambitious Vim-fork focused on extensibility and agility"
   homepage "https://neovim.io/"
-  url "https://github.com/neovim/neovim.git",
-    revision: "9e1474409934cda19e17d41a876415fc25022dce"
+  url "https://github.com/neovim/neovim.git"
   version "0.8.0"
   license "Apache-2.0"
   revision 4
