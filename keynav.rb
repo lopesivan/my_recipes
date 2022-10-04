@@ -10,7 +10,7 @@ class Keynav < Formula
   license "GPL-3.0-or-later"
 
   def install
-    system "make", "CC=/usr/bin/cc"
+    system "make"
     system "make","PREFIX=#{prefix}", "install"
   end
 
