@@ -14,8 +14,8 @@ class JsonTui < Formula
       --no-warn-unused-cli
       -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
       -DCMAKE_BUILD_TYPE:STRING=Debug
-      -DCMAKE_C_COMPILER:FILEPATH=/usr/local/bin/clang
-      -DCMAKE_CXX_COMPILER:FILEPATH=/usr/local/bin/clang++
+      -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+      -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
       -DCMAKE_INSTALL_PREFIX=#{prefix}
     ]
 
