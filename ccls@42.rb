@@ -12,8 +12,8 @@ class CclsAT42< Formula
 
   def install
     std_cmake_args = %W[
-      -DCMAKE_CXX_COMPILER=clang++-15
-      -DCMAKE_PREFIX_PATH=/usr/lib/llvm-15
+      -DCMAKE_CXX_COMPILER=clang++-16
+      -DCMAKE_PREFIX_PATH=/usr/lib/llvm-16
       -DCMAKE_BUILD_TYPE=Release
       -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
       -DSYSTEM_CLANG=On
