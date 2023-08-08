@@ -11,8 +11,8 @@ class BashIt < Formula
   license 'GPL-3.0-or-later'
 
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-it/bash-it-custom-20230808-6289f6d0.diff'
-    sha256 'ef7a620125c7c74096400f42d791470b124f4f7aee1c57a5a9499edb29c4702b'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-it/bash-it-custom-20230808-8b0c4d2f.diff'
+    sha256 'af7fb5ceb3420b8376dc8f0a31fb8cf0ff659a08dfcaae382a402f7a498fe927'
   end
 
   def install
