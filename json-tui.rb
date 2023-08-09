@@ -10,6 +10,8 @@ class JsonTui < Formula
   license "GPL-3.0-or-later"
 
   def install
+    ENV["CPLUS_INCLUDE_PATH"] = "/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11"
+    ENV["LIBRARY_PATH"] = "/usr/lib/gcc/x86_64-linux-gnu/11"
     args = %W[
       --no-warn-unused-cli
       -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
