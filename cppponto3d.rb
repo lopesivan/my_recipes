@@ -8,7 +8,8 @@ class Cppponto3d < Formula
   head "https://github.com/lopesivan/cppPonto3d.git", branch: "master"
 
   def install
-    # ENV["DESTDIR"] = "/"
+    ENV["CPLUS_INCLUDE_PATH] = "/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11"
+    ENV["LIBRARY_PATH] = "/usr/lib/gcc/x86_64-linux-gnu/11"
     args = %W[
       --no-warn-unused-cli
       -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
