@@ -1,7 +1,8 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class BashConfig < Formula
+
+class BashIt < Formula
   desc "Bash-it is a collection of community Bash commands and scripts for Bash 3.2+. (And a shameless ripoff of oh-my-zsh smiley."
   homepage "https://github.com/Bash-it/bash-it"
   url "https://github.com/Bash-it/bash-it.git",
@@ -12,8 +13,8 @@ class BashConfig < Formula
     using: :git
   license "GPL-3.0-or-later"
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-it/bash-it-custom-20230809-00e65af4.diff'
-    sha256 '57ae4b401551f0ff50dec9983a1dc78d0756dba49f88ca01598971974b4d1882'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-it/bash-it-custom-20230809-bd2de4f9.diff'
+    sha256 'ff61eb0a5937ed3e7d72ad54dab583dd8957a53959f53043077e023bf39a5ce6'
   end
   def install
     prefix.install Dir["*"]
