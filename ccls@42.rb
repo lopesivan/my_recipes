@@ -11,9 +11,12 @@ class CclsAT42< Formula
   head "https://github.com/MaskRay/ccls.git", branch: "master"
 
   def install
+    ENV["CPLUS_INCLUDE_PATH"] = "/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11"
+    ENV["LIBRARY_PATH"] = "/usr/lib/gcc/x86_64-linux-gnu/11"
     std_cmake_args = %W[
-      -DCMAKE_CXX_COMPILER=clang++-16
-      -DCMAKE_PREFIX_PATH=/usr/lib/llvm-16
+      -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+      -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+      -DCMAKE_PREFIX_PATH=/usr/lib/llvm-18
       -DCMAKE_BUILD_TYPE=Release
       -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
       -DSYSTEM_CLANG=On
