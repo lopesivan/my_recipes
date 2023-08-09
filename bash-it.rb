@@ -13,8 +13,8 @@ class BashIt < Formula
     using: :git
   license "GPL-3.0-or-later"
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-it/bash-it-custom-20230809-a16d6cab.diff'
-    sha256 '63ee3daff65060541004a9b2087f9ce0c6995b22071a549edb5c3b13af8f67a0'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-it/bash-it-custom-20230809-4a9fde9c.diff'
+    sha256 '87c36fb93e91bd5f8bb6d17c4fd9d7a2e9eacb88a05d3b382623f28630d0a55c'
   end
   def install
     prefix.install Dir["*"]
