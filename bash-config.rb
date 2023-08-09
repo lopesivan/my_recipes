@@ -6,14 +6,14 @@ class BashConfig < Formula
   homepage "https://github.com/lopesivan/bash-config"
   url "https://github.com/lopesivan/bash-config.git",
     revision: "89b1ef85ef2b3fd2907f2be9b345fd2b53a76a07"
-  version "1.3"
+  version "1.4"
   head "https://github.com/lopesivan/bash-config",
     branch: "main",
     using: :git
   license "GPL-3.0-or-later"
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-config/bash-config-custom-20230809-0c19587.diff'
-    sha256 'a43602b1e7d4e3618030026e7dc1d30ea26a5517ddce2991ed9559b46c949341'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-config/bash-config-custom-20230809-6d542b3.diff'
+    sha256 'c2994bee71b13ac10ec02c189f3495b1fa7701b2a9113d4e1cd004a5e0553156'
   end
   def install
     inreplace "bashrc", "${HOME}/developer/bash-config", "#{opt_prefix}"
