@@ -12,9 +12,8 @@ class BashConfig < Formula
     using: :git
   license "GPL-3.0-or-later"
   patch do
-
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-config/bash-config-custom-20230809-6a1e954.diff'
-    sha256 '7e079ec6a72a758bcd83dffc177758cd07db75e5a0ba9fc2b12e1831dfc83400'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/bash-config/bash-config-custom-20230809-0c19587.diff'
+    sha256 'a43602b1e7d4e3618030026e7dc1d30ea26a5517ddce2991ed9559b46c949341'
   end
   def install
     inreplace "bashrc", "${HOME}/developer/bash-config", "#{opt_prefix}"
