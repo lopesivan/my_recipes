@@ -2,7 +2,7 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class Nativium < Formula
+class NativiumAT42 < Formula
   desc "Write a single code in C++ and compile for any platform."
   homepage "https://github.com/nativium/nativium"
   url "https://github.com/nativium/nativium.git",
