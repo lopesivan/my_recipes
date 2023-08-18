@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class Nativium < Formula
-  desc "Bash-it is a collection of community Bash commands and scripts for Bash 3.2+. (And a shameless ripoff of oh-my-zsh smiley."
+  desc "Write a single code in C++ and compile for any platform."
   homepage "https://github.com/nativium/nativium"
   url "https://github.com/nativium/nativium.git",
     revision: "ef990f976e51626474f3203a6b238ca732eb1fdf"
