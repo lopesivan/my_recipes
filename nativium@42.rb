@@ -7,7 +7,7 @@ class Nativium < Formula
   homepage "https://github.com/nativium/nativium"
   url "https://github.com/nativium/nativium.git",
     revision: "ef990f976e51626474f3203a6b238ca732eb1fdf"
-  version "1.1.1"
+  version "1.1.2"
 #  head "https://github.com/nativium/nativium",
 #    branch: "main",
 #    using: :git
