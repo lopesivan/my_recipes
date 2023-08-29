@@ -13,8 +13,8 @@ class NativiumAT42 < Formula
 #    using: :git
   license "GPL-3.0-or-later"
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/nativium/nativium-custom-20230828-3e4a2dc.diff'
-    sha256 '260c174538692e64ee726b55195d2720ca503010f7f980e766902aa585e93d90'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/nativium/nativium-custom-20230828-fa49c9e.diff'
+    sha256 'e288fa284bc709da75f8d64b9f453d083ffc7cee3becf6ebf3089ef4cfc926f4'
   end
   def install
     prefix.install Dir["*"]
