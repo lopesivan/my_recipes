@@ -29,6 +29,8 @@ class MiscellanyTools < Formula
     bin.install 'bin/trans' => 'trans'
     bin.install 'bin/lsperm.sh' => 'lsperm'
     bin.install 'bin/skeleton.sh' => 'skeleton'
+    bin.install 'bin/prj.go.sh' => 'prj.go'
+    bin.install 'bin/prj.kotlin.sh' => 'prj.kotlin'
     bin.install 'bin/fennel-1.1.0' => 'fennel'
     # bin.install "bin/tree-sitter-0.20.2" => "tree-sitter"
     bin.install 'bin/java-lsp.sh' => 'java-lsp.sh'
