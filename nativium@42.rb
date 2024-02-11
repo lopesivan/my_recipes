@@ -3,24 +3,24 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class NativiumAT42 < Formula
-  desc 'Write a single code in C++ and compile for any platform.'
-  homepage 'https://github.com/nativium/nativium'
-  url 'https://github.com/nativium/nativium.git',
-      revision: 'afe15f78f355d6ddc449179f8f7da191df4615e9'
-  version '1.1.2'
-  #  head "https://github.com/nativium/nativium",
-  #    branch: "main",
-  #    using: :git
-  license 'GPL-3.0-or-later'
+  desc "Write a single code in C++ and compile for any platform."
+  homepage "https://github.com/nativium/nativium"
+  url "https://github.com/nativium/nativium.git",
+    revision: "ef990f976e51626474f3203a6b238ca732eb1fdf"
+  version "1.1.2"
+#  head "https://github.com/nativium/nativium",
+#    branch: "main",
+#    using: :git
+  license "GPL-3.0-or-later"
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/nativium/nativium-custom-20230828-fa49c9e.diff'
-    sha256 'e288fa284bc709da75f8d64b9f453d083ffc7cee3becf6ebf3089ef4cfc926f4'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/nativium/nativium-custom-20240211-2bec797.diff'
+    sha256 '019526710d3289d7ed7379ea7080cf797e50a830337575ffdbf8991e48ad18c4'
   end
   def install
-    prefix.install Dir['*']
+    prefix.install Dir["*"]
   end
 
   test do
-    system 'false'
+    system "false"
   end
 end
