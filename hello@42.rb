@@ -7,24 +7,15 @@ class HelloAT42 < Formula
   homepage 'https://github.com/lopesivan/hello'
   url 'https://github.com/lopesivan/hello.git',
       revision: 'a95871b4a525196ff513ae31ae04f65240ad844e'
-  version '1.0.1'
+  version '1.0.0'
   #  head "https://github.com/lopesivan/hello",
   #    branch: "main",
   #    using: :git
   license 'GPL-3.0-or-later'
 
   def install
-    args = %W[
-      --prefix=#{prefix}
-    ]
-
-    system 'sh', 'autogen.sh'
-
-    mkdir 'build' do
-      system '../configure', *args
-      system 'make', 'CC=/usr/bin/gcc', 'CXX=/usr/bin/g++'
-      system 'make', 'install'
-    end
+    system 'make'
+    system 'make', "PREFIX=#{prefix}", 'install'
   end
 
   test do
