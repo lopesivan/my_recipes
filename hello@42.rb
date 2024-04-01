@@ -14,8 +14,17 @@ class HelloAT42 < Formula
   license 'GPL-3.0-or-later'
 
   def install
-    system 'make'
-    system 'make', "PREFIX=#{prefix}", 'install'
+    args = %W[
+      --prefix=#{prefix}
+    ]
+
+    system 'sh', 'autogen.sh'
+
+    mkdir 'build' do
+      system '../configure', *args
+      # system 'make', 'CC=/usr/bin/gcc', 'CXX=/usr/bin/g++'
+      system 'make', 'install'
+    end
   end
 
   test do
