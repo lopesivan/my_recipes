@@ -7,14 +7,14 @@ class TdlAT42 < Formula
   homepage "https://github.com/ivancarlos/tdl"
   url "https://github.com/ivancarlos/tdl.git",
     revision: "7c12681a9eb330545cf82f42268b8d4b466d0d4a"
-  version "1.0.3"
+  version "1.5.2"
 #  head "https://github.com/ivancarlos/tdl",
 #    branch: "master",
 #    using: :git
   license "GPL-3.0-or-later"
   patch do
-    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/tdl/tdl-custom-7c12681a9eb330545cf82f42268b8d4b466d0d4a-20240427.diff'
-    sha256 '84468dc449e2b3571120dda12170f6150d2120d6a6bf86add2aa4e07ca5cd8b2'
+    url 'https://raw.githubusercontent.com/lopesivan/my_patches/main/tdl/tdl-custom-0e87502b3d8e33467c23c10c43f23d2a9302df6e-20240427.diff'
+    sha256 'f12b4f545b49037f56075287fd9fa5522240525dfaf6662eb3b2bbaed252a6cf'
   end
   def install
     args = %W[
