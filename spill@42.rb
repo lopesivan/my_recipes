@@ -17,7 +17,11 @@ class SpillAT42 < Formula
     sha256 '7c5e09b99d0e463871fb2a29baeff9c38f6fd3c65a0bfabca62a5dec515fd0cf'
   end
   def install
-    system './configure'
+    args = %W[
+      --prefix=#{prefix}
+    ]
+
+    system './configure', *args
     system 'make'
     system 'make', 'install'
   end
